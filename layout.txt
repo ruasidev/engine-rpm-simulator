@@ -1,0 +1,42 @@
+Engine RPM Simulator Idea Layout (original idea before starting)
+
+Holding throttle (w) will increase the RPM of the engine quickly
+
+The higher the gear, the slower the RPM and speed will rise
+
+Car will redline at 8500 RPM and jitter between 8600 and 8500 until the user shifts (p)
+
+Idle will be around 800-850 RPM semi randomly
+
+        How to randomly set idle RPM:
+            1. Select a random number between 800 and 850
+            2. Decrement / Increment RPM value to that number at a set speed (will figure it out)
+            3. Loop this until throttle is clicked
+        Set this as a function and start running it until either throttle is clicked OR RPMs slow down to 850
+
+Braking (i forgot about this)
+
+Braking (l) will decrease RPMs down to 850 rapidly
+
+Gears
+
+Upshift will be P and downshift will be ;
+
+downshifting will jump RPMs quickly about 2000
+
+1st gear will cap at 40 MPH
+
+2nd gear will cap at 60 MPH
+
+3rd gear will cap at 80 MPH
+
+4th gear will cap at 100 MPH
+
+5th gear will cap at 120 MPH
+
+6th gear will cap at 140 MPH
+
+THRTL : w
+UPSHF : p
+DWSHF : ;
+BRAKE : l
