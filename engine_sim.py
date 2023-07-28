@@ -44,7 +44,7 @@ def print_data(rpm, gear):
         if rpm > 8520:
             rpm_color = RPM_COLORS[2]
     
-    print(f"   RPM: {rpm_color}{rpm:4}{Fore.RESET}   GEAR: {gear_color}{gear}{Fore.RESET}", end='\r')
+    print(f"   RPM: {rpm_color}{rpm:5}{Fore.RESET}   GEAR: {gear_color}{gear:2}{Fore.RESET}", end='\r')
 
 def idle():
     global IDLE
